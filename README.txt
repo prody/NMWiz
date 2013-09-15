@@ -1,0 +1,29 @@
+Normal Mode Wizard
+==================
+
+Normal Mode Wizard (NMWiz) is a VMD plugin designed for visual comparative
+analysis of normal mode data. Modes may come from principal component,
+essential dynamics, normal mode analysis or may be any vector describing a
+molecular motion.
+
+NMWiz can be used for:
+
+ * performing ANM, GNM, and PCA/EDA calculations via ProDy
+ * drawing customizable normal mode arrows
+ * making animations (sample conformations)
+ * making interactive square-fluctuations and cross-correlations plots
+ * comparing two structures and drawing deformation arrows
+
+
+Download
+--------
+
+NMWiz is distributed with VMD (1.9.1 and later).
+
+Reference
+---------
+
+If you have used NMWiz in published work, please consider citing:
+
+  | ProDy: Protein Dynamics Inferred from Theory and Experiments
+  | Bakan A, Meireles LM, Bahar I 2011 Bioinformatics 27(11):1575-1577
