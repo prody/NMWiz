@@ -23,16 +23,16 @@ NMWiz is distributed with VMD (1.9.1 and later).
 Documentation
 -------------
 
-See [NMWiz][] homepage for documentation and tutorials. 
+See [NMWiz][] homepage for documentation and tutorials.
 
 Reference
 ---------
 
 If you have used NMWiz in published work, please consider citing:
 
->i ProDy: Protein Dynamics Inferred from Theory and Experiments
+> ProDy: Protein Dynamics Inferred from Theory and Experiments
 > Bakan A, Meireles LM, Bahar I 2011 Bioinformatics 27(11):1575-1577
-  
-  
+
+
 [VMD]: http://www.ks.uiuc.edu/Research/vmd/
 [NMWiz]: http://www.csb.pitt.edu/NMWiz
