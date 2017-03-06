@@ -340,7 +340,7 @@ cyan purple black yellow2 yellow3 green2 green3 \
 cyan2 cyan3 blue2 blue3 violet magenta magenta2 red2 red3 orange2 \
 orange3"
 
-
+  cd ~
   variable outputdir [pwd]
   variable defaultColor "yellow3"
 
@@ -1177,8 +1177,8 @@ orange3"
     }
     if {$::NMWiz::prodyHeatmap} {lappend args "-u"}
     vmdcon -info "Executing: $::NMWiz::pybin $::NMWiz::prody anm --quiet -s $selstr $args \"$pdbfn\""
-    set status [exec $::NMWiz::pybin $::NMWiz::prody anm --quiet -s $selstr {*}$args "$pdbfn"]
-
+    set status [exec $::NMWiz::prody anm --quiet -s $selstr {*}$args "$pdbfn"]
+    # $::NMWiz::pybin
 
     if {$status != -1} {
       set handle [::NMWiz::loadNMD $nmdfile]
@@ -1236,7 +1236,8 @@ orange3"
 
     if {$::NMWiz::prodyHeatmap} {lappend args "-u"}
     vmdcon -info "Executing: $::NMWiz::pybin $::NMWiz::prody gnm --quiet -s $selstr $args \"$pdbfn\""
-    set status [exec $::NMWiz::pybin $::NMWiz::prody gnm --quiet -s $selstr {*}$args "$pdbfn"]
+    set status [exec $::NMWiz::prody gnm --quiet -s $selstr {*}$args "$pdbfn"]
+    # $::NMWiz::pybin
 
     if {$status != -1} {
       set handle [::NMWiz::loadNMD $nmdfile]
@@ -1314,8 +1315,8 @@ orange3"
     if {$::NMWiz::prodyHeatmap} {lappend args "-u"}
 
     vmdcon -info "Executing: $::NMWiz::pybin $::NMWiz::prody $args"
-    set status [exec $::NMWiz::pybin $::NMWiz::prody {*}$args]
-
+    set status [exec $::NMWiz::prody {*}$args]
+    # $::NMWiz::pybin
 
     if {$status != -1} {
       set handle [::NMWiz::loadNMD $nmdfile]
