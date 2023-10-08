@@ -1652,12 +1652,13 @@ orange3"
     set resnames [$sel get resname]
     set resids [$sel get resid]
     set chainids [$sel get chain]
+    set segnames [$ref get segname]
     set bfactors [$sel get beta]
 
     $sel delete
 
     set ns [::NMWiz::makeNMWizGUI]
-    ${ns}::initialize $coordinates $modes $n_dims $title $lengths $indices $atomnames $resnames $resids $chainids $bfactors
+    ${ns}::initialize $coordinates $modes $n_dims $title $lengths $indices $atomnames $resnames $resids $chainids $segnames $bfactors
     ${ns}::nmwizgui
     ::NMWiz::appendGUIcontrols $ns
 
